@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class RepositorioMem {
+public class RepositorioMem implements Repositorio {
     private ArrayList<Utilizador> UTILIZADOR;
     private ArrayList<TipoUtilizador> TIPO;
     private ArrayList<Requisicao> REQUISICAO;

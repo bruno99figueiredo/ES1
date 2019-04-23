@@ -3,7 +3,7 @@ public class Utilizador {
     private String estado;
     private TipoUtilizador tipo;
 
-    public Utilizador(String nome, String estado) {
+    public Utilizador(String nome, String estado, TipoUtilizador tipo) {
         this.nome = nome;
         this.estado = estado;
     }
