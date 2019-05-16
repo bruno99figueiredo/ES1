@@ -16,8 +16,8 @@ public class Main {
         /*Novas Classes*/
         //
         Leitor leitor= new Leitor("Bruno","ativo", "aluno");
-        TipoSala tipoSala=new TipoSala("leitura",3);
-        Sala sala =new Sala("livre", tipoSala);
+        TipoSala tipoSala=new TipoSala("leitura",3,LocalDate.now());
+        Sala sala =new Sala("livre", tipoSala,1);
         SistemaLimpeza sistemaLimpeza = new SistemaLimpeza("Ajax",3, LocalDate.now(),sala);
         GestaoLeitura gestaoLeitura= new GestaoLeitura(sala,"Romance", LocalDate.now(), 3, leitor);
         //
