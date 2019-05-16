@@ -12,6 +12,16 @@ public class Main {
         RequisicaoCompraCopia requisicaoCompraCopia = new RequisicaoCompraCopia("pendente", LocalDate.now(), "Oficio",l,u);
         Encomenda encomenda = new Encomenda(LocalDate.now(),requisicaoCompraCopia);
         EntradaNovoLivro entradaNovoLivro = new EntradaNovoLivro(LocalDate.now(),encomenda,c);
+
+        /*Novas Classes*/
+        //
+        Leitor leitor= new Leitor("Bruno","ativo", "aluno");
+        TipoSala tipoSala=new TipoSala("leitura",3);
+        Sala sala =new Sala("livre", tipoSala);
+        SistemaLimpeza sistemaLimpeza = new SistemaLimpeza("Ajax",3, LocalDate.now(),sala);
+        GestaoLeitura gestaoLeitura= new GestaoLeitura(sala,"Romance", LocalDate.now(), 3, leitor);
+        //
+
         //... criação do objeto repositorio
         Repositorio repo = new RepositorioMem();
         repo.adicionaEntradaNovoLivro(entradaNovoLivro);

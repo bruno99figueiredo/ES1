@@ -14,4 +14,13 @@ public interface Repositorio {
     void	adicionaEntradaNovoLivro(EntradaNovoLivro entradaNovoLivro);
     void	adicionaPropostaRequisicao(PropostaAquisicao proposta);
     void	adicionaRequisicaoCompra(RequisicaoCompra requisicaoCompra);
+
+
+    /*Novas Classes*/
+    //
+    void adicionaLeitor (Leitor leitor);
+    void adicionaTipoSala(TipoSala tipoSala);
+    void adicionaSala(Sala sala);
+    void adicionaSistemaLimpeza(SistemaLimpeza sistemaLimpeza);
+    void adicionaGestaoLeitura(GestaoLeitura gestaoLeitura);
 }
