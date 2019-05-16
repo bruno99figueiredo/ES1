@@ -1,11 +1,11 @@
 public class Sala {
     private String estado;
-    private TipoSala tipoSala;
+    private String descricao;
     private int nr_sala;
 
-    public Sala(String estado, TipoSala tipoSala, int nr_sala) {
+    public Sala(String estado, String descricao, int nr_sala) {
         this.estado = estado;
-        this.tipoSala = tipoSala;
+        this.descricao = descricao;
         this.nr_sala = nr_sala;
     }
 
@@ -13,8 +13,8 @@ public class Sala {
         return estado;
     }
 
-    public TipoSala getTipoSala() {
-        return tipoSala;
+    public String getDescricao() {
+        return descricao;
     }
 
     public int getNr_sala() {
