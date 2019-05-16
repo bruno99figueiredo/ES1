@@ -17,8 +17,8 @@ public class RepositorioMem implements Repositorio {
     private ArrayList<GestaoLeitura> GESTAOLEITURA;
     private ArrayList<Leitor> LEITOR;
     private ArrayList<Sala> SALA;
+    private ArrayList<AluguerSala> ALUGUERSALA;
     private ArrayList<SistemaLimpeza> SISTEMALIMPEZA;
-    private ArrayList<TipoSala> TIPOSALA;
 
     public RepositorioMem(){
         UTILIZADOR = new ArrayList<>();
@@ -35,8 +35,8 @@ public class RepositorioMem implements Repositorio {
         PROPOSTAAQUISICAO = new ArrayList<>();
         REQUISICAOCOMPRA = new ArrayList<>();
         LEITOR = new ArrayList<>();
-        TIPOSALA = new ArrayList<>();
         SALA = new ArrayList<>();
+        ALUGUERSALA = new ArrayList<>();
         SISTEMALIMPEZA = new ArrayList<>();
         GESTAOLEITURA = new ArrayList<>();
     }
@@ -97,9 +97,9 @@ public class RepositorioMem implements Repositorio {
     /*Novas Classes*/
     public void	adicionaLeitor (Leitor leitor){ LEITOR.add( leitor);}
 
-    public void adicionaTipoSala(TipoSala tipoSala){TIPOSALA.add(tipoSala);}
-
     public void adicionaSala(Sala sala){SALA.add(sala);}
+
+    public void adicionaAluguerSala(AluguerSala aluguerSala){ALUGUERSALA.add(aluguerSala);}
 
     public void adicionaSistemaLimpeza(SistemaLimpeza sistemaLimpeza){SISTEMALIMPEZA.add(sistemaLimpeza);}
 

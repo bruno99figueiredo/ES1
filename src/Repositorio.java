@@ -19,8 +19,8 @@ public interface Repositorio {
     /*Novas Classes*/
     //
     void adicionaLeitor (Leitor leitor);
-    void adicionaTipoSala(TipoSala tipoSala);
     void adicionaSala(Sala sala);
+    void adicionaAluguerSala(AluguerSala aluguerSala);
     void adicionaSistemaLimpeza(SistemaLimpeza sistemaLimpeza);
     void adicionaGestaoLeitura(GestaoLeitura gestaoLeitura);
 }
