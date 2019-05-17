@@ -15,7 +15,7 @@ public class Main {
 
         /*Novas Classes*/
         //
-        Leitor leitor= new Leitor("Bruno","ocupado", "aluno");
+        Leitor leitor= new Leitor("Bruno","livre", "aluno");
         Sala sala =new Sala("livre","sala de leitura",1);
         UtilizadorSala utilizadorSala = new UtilizadorSala("bruno","aluno");
         AluguerSala aluguerSala= new AluguerSala(utilizadorSala,3, LocalDate.now(),sala);
