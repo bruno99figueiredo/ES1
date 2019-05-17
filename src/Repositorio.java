@@ -20,6 +20,7 @@ public interface Repositorio {
     //
     void adicionaLeitor (Leitor leitor);
     void adicionaSala(Sala sala);
+    void adicionaUtilizadorSala(UtilizadorSala utilizadorSala);
     void adicionaAluguerSala(AluguerSala aluguerSala);
     void adicionaSistemaLimpeza(SistemaLimpeza sistemaLimpeza);
     void adicionaGestaoLeitura(GestaoLeitura gestaoLeitura);
