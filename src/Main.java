@@ -18,10 +18,10 @@ public class Main {
         Leitor leitor= new Leitor("Bruno","livre", "aluno");
         Sala sala =new Sala("livre","sala de leitura",1);
         UtilizadorSala utilizadorSala = new UtilizadorSala("bruno","aluno");
-        AluguerSala aluguerSala= new AluguerSala(utilizadorSala,3, LocalDate.now(),sala);
-        SistemaLimpeza sistemaLimpeza = new SistemaLimpeza("Ajax",3, LocalDate.now(),sala);
+        AluguerSala aluguerSala= new AluguerSala(utilizadorSala,19, 3, LocalDate.now(),sala);
+        SistemaLimpeza sistemaLimpeza = new SistemaLimpeza("Ajax",19,3, LocalDate.now(),sala);
         Livro livro = new Livro("A culpa é das estrelas", "LeYa");
-        GestaoLeitura gestaoLeitura= new GestaoLeitura(sala, livro,"Romance", LocalDate.now(), 3, leitor);
+        GestaoLeitura gestaoLeitura= new GestaoLeitura(sala, livro,"Romance", LocalDate.now(), 19,3, leitor);
         //
 
         //... criação do objeto repositorio
